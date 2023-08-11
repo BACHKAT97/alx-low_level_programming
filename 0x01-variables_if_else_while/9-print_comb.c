@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Prints numbers of base 16 in lowercase, separated by commas and spaces.
+ * main - Prints numbers of base 16 in lowercase with separators.
  *
  * Return: Always 0 (Success).
  */
