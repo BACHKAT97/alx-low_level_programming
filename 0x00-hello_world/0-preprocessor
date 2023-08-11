@@ -1,13 +1,2 @@
 #!/bin/bash
-
-# Check if CFILE variable is set and if the file exists
-if [[ -z "$CFILE" ]]; then
-    echo "Please set the CFILE environment variable."
-    exit 1
-elif [[ ! -f "$CFILE" ]]; then
-    echo "File '$CFILE' not found!"
-    exit 1
-fi
-
-# Preprocess the C file and save the result to 'c'
-cpp $CFILE > c
+gcc -E $CFILE -o c
